@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fmeflow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fmeflow
+  template:
+    metadata:
+      labels:
+        app: fmeflow
+    spec:
+      imagePullSecrets:
+      - name: acr-secret # create this if your ACR is private
+      containers:
+      - name: fmeflow
+        image: myacr.azurecr.io/fmeflow:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - secretRef:
+            name: fmeflow-secrets
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
