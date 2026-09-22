@@ -1,0 +1,20 @@
+{
+  "project": "Azure_Kbts_FME_Flow",
+  "version": "1.0.0",
+  "product": "FME Flow",
+  "productVersion": "2026.2",
+  "architecture": {
+    "platform": "Azure Kubernetes Service (AKS)",
+    "webApplication": "FME Flow",
+    "remoteEngine": {
+      "type": "FME Remote Engine Services",
+      "location": "on-prem",
+      "connectivity": "reverse tunnel"
+    }
+  },
+  "repository": {
+    "owner": "sweco-sehhan",
+    "name": "Azure_Kbts_FME_Flow"
+  },
+  "status": "baseline"
+}

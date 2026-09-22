@@ -1,0 +1,264 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME2026.1\fme.exe" "C:\Users\SEHHAN\OneDrive - Sweco AB\FME\Azure_Kbts_FME_Flow\Test_Linked_Transformer.fmw"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAACwCAIAAACuBq8ZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAO1UlEQVR4nO3dW3Bc9X3A8d85e3a1K+1qV3dZknX3VbZlY2yoabjEKRgKqaENAQp4YKAPpdMZZto+5KVNO7280ClNpwkdJpkJaZJCAwQS0kkCMQGnGHxB8kWWZVvWdXXZi3a12l3tnksfRGSBJGPL13/1/Tx4rD275xx5Rl/+53/+HGmO4wgAqEC/1icAABeKYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACiDYAFQBsECoAyCBUAZBAuAMggWAGUQLADKIFgAlEGwACjDuNYnAFxtA6PDkXj03NeaFvD7r86hq0oqAoVFS/74WMyKJezLeD6zEilrzldObaVRV+W+Ege6RJrjONf6HICrJxKP/eW/fN12zv3YBwqLHv3KQ1fh0Jqmp5KTO9Zt9RV4l/DxWNJ674AVLL4ig4znXgrP+copcOsv/nV1KHDdXYExwsLyYtmW7djanFc0TSvwFCzwznTaKiz0iEhuMiUBv8fK5cTjcZ1v57MfWYTLbViWtfj28zFNKSjQvZ4rEhFNkzlDF20675jm9TiUIViA/O/Pf1YSt62v/n7Thy/9MHPPuuQvG2+7z5d8++2f3/qHu7O/ev3o2l1fmPro+z/rcNXv2L0pu7+vud3feaA/a4fW31pxem+0/b5c1/+U5gdffkXf88Kewg/eOlx82++tL77s5/nxwV/ffvutkYM/7PDvWht5da+5/Xbjw73m9rv8Zwbqby463uHafHdL8LIf9jpy3Q35gGthIuOtDMrYoYGqhsjRREFxwJvpfFe2ftEvEljfnnr/VyeOR4tXNDX7Et0HOgasRDzmLvYHQuZA90D/R2e6RCQbc6+r21RSL6NdsTLPeN8VOc18IpHp645XeaK/OT2ZT/ccmfnz8NEz1mQk7l79/7tWwhwWlpvR6PhfPf+3cy8JA0X+Jx95fKH3Jgc7+qVxQ93lq0AimbyxaYN/SfPuYzHrUJcTCsxcFcUGPtw7ULptZeyjgdI7d7Re6k2Df/j20GdK8J2/qS4vOd/17zXBJSGWO5/XG/IFFtoSCN1cu7R9dg92pafTuuhtDRsNw8hms16vV0SsaXPJ56lp0rpSyoK2rusipeuaHhARkZVL3uFndq7Pqbh9vQ5jCBYgIjI+Nl5WXhaLxsoryj+9JZtKir/4Iu7rxVLRMT1cUlviK/QdOnFga/ONXUePh0pCTS3NSz4957deefk/DcO4/4Gv6vrlnM+pqdC+0H6uBu93LPHOwJVGsAARkdHwyJuv/viPHn5QRKYO/+BtY5v21t6IeFe06d3HtC89couRSoukT77RV/PlknRf2apdG6sX2VUulwsPhQ/uP1hRVbGmer1tOy6Xy7adzsOHapuaRCQzHM7WrChZ/GQSicQ777zjOI6maSJimqbH40lO2emM8967b7/xxo9isejTf/LgT1767xW37JbTx4w1re5USmSq6/XezV97uOXiv/3stAyNn1vqMZW9+F1cFQQLEBHZ0L5xZUN9cbBYZPR4uMbvm6q6d8dqCQ+NJe3pXPhUb1BLRPPtbfcmh45GYpNjffGN1Yskx+PxVNdUb9yy0XAb8e6krmu2bRmGa9OWG6ITcRHxFRXm5n3KTKVMv39mIBcIBHbv3j1Tq1njcSsx6Rha9s5d99533wMivUm90NfbnYqa7p6TIS0eyW9rv89Xt6Rv3+OWqjJNRFJTMjhu58wrsjz10hEsQDTRRCQUComISPX2e2YHT21r22TnHXPf29jS9jl7K/OX10zUp/tTpjhbm7cZhrF+w4aCggIR+aRAweC8efyzh46fGT72bqz660/eLYtd7jmO3P/AQzNbHafl4UdaRMa6umTduso5b5IlTECFI84rv1z6/NpVQ7CApf2Mn0/eypliaY5li+2I43LpM4dY/DB1zaU/fXXfSe22mEjpYm/SNHG5PtOyyvXrL/SsjvV/nJieEEe2NGz3FRSapmkYihWAdViAiMjY6Jht2+Nj4/O2ZFPJRWd0zHR6/sVdbDIaLRhzVUtwdeDwmYO2bX/7hRd/894+M5+3LMs0TdM05y4nyuVyIkZ56zP/9OIP/vGxRWs1Y3Qk7DjOSHj4/G8zzc8OlzLT6a7MwVxFoqDV3tfzjoicOd2z/4N9U1OpRXeSSl1vc1mK9RW4dOWhkrryKttxesODjdW18VRSRKLj4z959ccPPvqwfP6k+4rJKXdJYkxaVvV896Omr9Q67q03tp5bWpXL58ID4QODByqrK1dXrXMcp/t49wv/+u9P/enTK+rrB0pPeQu86XTa7XaLiOM4brf7nnvucbkuaNGT2+P5t288t3PnXdUranrPdPuy/Wfd2xrzHae0Va3OiQ/PJFtv3FUa2//xVN2ubZ+afLccc3R0tPNQZ6g8dEPjzSKSz+dX1jd88MG+nTvvWuhQZw8d70sm27bWvfRa7188efeS/70vJ4KFZacyWNpx6oSINNXURRLxlStqRGTdhra6+np/wH8Bk+4j8bKASy+UXve2x5snwoHxbI+0bp7dv8ftKa8ub9vS5nK5Ej0pXdc3bWnf8/QTGzdvik7E19Y0L23hqIhoulYaLHt8z1PBYEhErKkTJ6ONKevXmrvBW3KqL54bO9EbbD0zGQmVz7shYOju0tLS9q3tbrc72T0tIm6Pe2QkfMstty1ytLrm0mP7zf5f/FdnT/P5LlSvJla6Y3kZjY4///1vNVbXTaan+kfDt96wvaPnxJMP/vHlPcrZkTOJqUnDpa+tb3Ppum3PrPaUSDy2tqZlacHKm86Rkzmfd/5ALDvW+UFvYFPTZGdvYPtNTYWL7WEo2hdPxXVNW13bZrgMy7Jmh3V/9+Lca2FnZZX77/+s3HBpC+7nGmKEhWXHNK1Cn8927NLi4PT0dEkgcNn/q53KpkwnnzedvJXXtYJMJltYONORpSfAbWib1nimMvMXHPhqvnTHZhGROzbP2zZXTWWjSOOcF879+H/za+fuM2qi+Qsv77rUy4ZgYdmZSCWLfL7pXM6y7fhkIm9aIjIyHK6oqoyMR6qqq377RjM3LZ4CY85fZM4mU8T49IufiE1GJ7wxr88bKgl1dB3e2nzjiWNdwWCwsaXpEs/ccGlB/3X3//ddTQQLy850Pv/Wvr1+X2EyPdU/MlRZVi4i8Xj8zdfeeGTPoyLS8+ErR3qL2m5fM3bc2Fh56OUfTTXf/8VNxql+d6O779B4qmXDHxR3vvJOumJbkxEzVq8LDY+7blo/u3Yrl88N9Q8NDw7PrnQ3DEM07fiRIzWNDXIBK92xGIKF5ShvmvHJ5NxX1rWtb2hsKCwqEhFXkRk5MxLZ3CQS6R0ZM+pb9chA2Fs+kT1WoPsnT33UF9/pq/Wf7uwpqAm5T50N5ob74utnF7573d6yirINmzeISKo3o7t0x7ELCjwtqzafZ6U7LgST7lhe5j9epqK0/JlHn1rSzqI9J2XV6rL5G4Yjg5PZSV03Wla06Jqez+XdHreIRCdiay7hLiEYYWG507Qlr3QvbV298GejU1HLsWzLmjanvW5v3pw2PIacb6U7Lsh1eScAuOrCQ0OWaY6GR+a8NjOzPvcvczdlP/Pi7Kr3aDIyWTiRC2aCawKdvR9bpnn8aNep7p65T3O38/nr9AEu1zdGWICISCKRfPO1Nx994jG56En3xsH391b/zo7ZVe91pfnBs4PDQ8OV1ZWrKtfatuN2uzVNO9Z5pLZpZtJ9IFlWoI9XVlRc629bNQQLEBFZu35dQ1Ojz+eTi550Pzap+QrnrHpvrWoIlYU2bNlgmVZmYFp36bZtFfi8LatbZyfdI+O5QJXNJc7FYtIdy8vCk+6PPb2knUVP90jLqgUm3Ucnwql0yuUyGiobNU2bfS5CNB5bU9PEpPuSMcLCcqdp4jhLe15dSXPrwp+tDFZVBmcWoDqO44hjz7ztsj/HZrlhRAqIiAwODJp5c2R4/mNb5s+4iyz0/JbF2Lb9jeee/+nrb2YymensdCaTyWQy6XS6o6Pj0k55OWKEBYiIZNLpF7/5H3uefkJExEz0hZ1c+BdHeovabt9qjVnlRu/p6FjX29L+4Ap/6eaS2MdHpla0Fcb1ls2VC/zS6E9xHGegr/973/nu0MBAbVNDpHTIW+CNRMafffbZ3t6zRUVcHl4EgoXlxXFEtAUWRK1as7q+sWHmQca5scHxXG3pJ1PvMTuSTES6Tzk3bf/yePzoSHbTwFS0uCwkPq9zdiRR2fA5v7ZQ1/Wbdtz8zLN/3ryqJRqPr6ltDhQWichDDz18gc/Awiwm3bG8mJb1z997YWJyYvaVQJH/zt+9Y9EPjB/ZP9l6U7PvUg468/tvNNFcmt7eesGPNMY8BAvLjm3b2dz0NTiw4xT6Fn1YFS4EwQKgDO4SAlAGwQKgDIIFQBkEC4AyCBYAZRAsAMogWACUQbAAKINgAVAGwQKgDIIFQBkEC4AyCBYAZRAsAMogWACUQbAAKINgAVAGwQKgDIIFQBkEC4AyCBYAZfwfa76XN6LKS9YAAAAASUVORK5CYII="
+#!   AI_CONTEXT_ENABLED="Yes"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="1183.78 65"
+#!   DOC_TOP_LEFT="1993.77 -1343.14"
+#!   ENABLE_DATA_CACHING="Yes"
+#!   ENABLE_FEATURE_COUNTING="Yes"
+#!   ENABLE_PERFORMANCE_PROFILING="No"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="26103"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="da45cbae-8464-4725-b195-a48bdfc22ef0"
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   INCOMPLETE_CACHE_HANDLING="Stale"
+#!   LAST_SAVE_BUILD="FME(R) 2026.1.0.0 (20260311 - Build 26103 - WIN64)"
+#!   LAST_SAVE_DATE="2026-06-16T13:02:30"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PROMPT_FOR_PARAMS="Yes"
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   STOP_AT_BREAKPOINTS="No"
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="0 50.0005"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbXX0="
+#! >
+#! <PARAMETER_INFO>
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="DAF2_SchemaInfo"
+#!   VERSION="3"
+#!   POSITION="1993.7699376993769 -1278.1377813778138"
+#!   BOUNDING_RECT="1993.7699376993769 -1278.1377813778138 507.15625 65"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="26103"
+#! >
+#!     <OUTPUT_FEAT NAME="Attributes"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Entity Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AttributeList" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="AttributeInfo"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Registre" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Entity Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Attribute" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Data type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="$(LIST_NAME){}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="Relationships"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="Entity Name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Relationship names" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="RelationshipInfo"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="Entity Name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Cardinality" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Relation Type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Entity + Field" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Foriegn Entity + Field" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Relationship name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="&lt;Rejected&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="Fejlmeddelelse" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_PARM PARM_NAME="DAF_Flexible_URL" PARM_VALUE="https://graphql.datafordeler.dk/flexible/v1/schema"/>
+#!     <XFORM_PARM PARM_NAME="Filter" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GetSchemaDataset" PARM_VALUE="BBR"/>
+#!     <XFORM_PARM PARM_NAME="GetSchemaForEntity" PARM_VALUE="Bygning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="URLparameters" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DAF2_SchemaInfo"/>
+#!     <XFORM_PARM PARM_NAME="apikey" PARM_VALUE="fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszjMXtSRphXPztObkOEUKS10Nm9JommnxQPFCcQ/jyUJMdv0dtZN0G9I3PBBJHAvaQSMbhXrUI4iwUpCXUJ6yHnaG2hmqwGDtzCV8uU+PHa2yHne7hKP89VjGArcQp1wzYQzBTQjaaI31u0YJ6YB7PobhUSNVCf2rRKvhYmkk/NWS6XT6wXxCnuyzLWfonq6b23CsO0tSY3M2bSLT6XtVTGVbwoiWa/WtzNzpvGBqn1EzjsO2Z+CiJwCPJ1xIgxTyx0jPMBXdRuoRBTtTzETPg7rG0LYt1muOZ9L+SIwkWEqVZRt5yCFA+C1m+6EpVHJ/KqjPRE/2A+lUFaL3DOr27h88dJrj6XXKJ)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="2741.5525939634394 -1278.1377813778138"
+#!   BOUNDING_RECT="2741.5525939634394 -1278.1377813778138 436 65"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="26103"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Registre" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Entity Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Attribute" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Data type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="$(LIST_NAME){}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="NONE"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="100"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;Registre&lt;closeparen&gt;&lt;space&gt;-&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Entity&lt;space&gt;Name&lt;closeparen&gt;&lt;space&gt;-&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Attribute&lt;closeparen&gt;&lt;space&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;Data&lt;space&gt;type&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 1 AttributeInfo"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2026.1.0.0 (20260311 - Build 26103 - WIN64)"
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+MACRO DAF2_SchemaInfo_WORKSPACE_NAME DAF2_SchemaInfo
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_XFORMER_NAME DAF2_SchemaInfo
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_URLparameters 
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_DAF_Flexible_URL https://graphql.datafordeler.dk/flexible/v1/schema
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_apikey fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszjMXtSRphXPztObkOEUKS10Nm9JommnxQPFCcQ/jyUJMdv0dtZN0G9I3PBBJHAvaQSMbhXrUI4iwUpCXUJ6yHnaG2hmqwGDtzCV8uU+PHa2yHne7hKP89VjGArcQp1wzYQzBTQjaaI31u0YJ6YB7PobhUSNVCf2rRKvhYmkk/NWS6XT6wXxCnuyzLWfonq6b23CsO0tSY3M2bSLT6XtVTGVbwoiWa/WtzNzpvGBqn1EzjsO2Z+CiJwCPJ1xIgxTyx0jPMBXdRuoRBTtTzETPg7rG0LYt1muOZ9L+SIwkWEqVZRt5yCFA+C1m+6EpVHJ/KqjPRE/2A+lUFaL3DOr27h88dJrj6XXKJ)
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_Filter 
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_GetSchemaDataset BBR
+MACRO $(DAF2_SchemaInfo_WORKSPACE_NAME)_GetSchemaForEntity Bygning
+INCLUDE_CUSTOM_TRANSFORMER_VER DAF2_SchemaInfo:3
+FACTORY_DEF * TeeFactory   FACTORY_NAME "DAF2_SchemaInfo Attributes Output Renamer/Nuker"   INPUT FEATURE_TYPE DAF2_SchemaInfo_Attributes
+FACTORY_DEF * TeeFactory   FACTORY_NAME "DAF2_SchemaInfo AttributeInfo Output Renamer/Nuker"   INPUT FEATURE_TYPE DAF2_SchemaInfo_AttributeInfo   OUTPUT FEATURE_TYPE DAF2_SchemaInfo_AttributeInfo
+FACTORY_DEF * TeeFactory   FACTORY_NAME "DAF2_SchemaInfo Relationships Output Renamer/Nuker"   INPUT FEATURE_TYPE DAF2_SchemaInfo_Relationships
+FACTORY_DEF * TeeFactory   FACTORY_NAME "DAF2_SchemaInfo RelationshipInfo Output Renamer/Nuker"   INPUT FEATURE_TYPE DAF2_SchemaInfo_RelationshipInfo
+FACTORY_DEF * TeeFactory   FACTORY_NAME "DAF2_SchemaInfo <Rejected> Output Renamer/Nuker"   INPUT FEATURE_TYPE DAF2_SchemaInfo_<Rejected>   OUTPUT FEATURE_TYPE DAF2_SchemaInfo_<Rejected>
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "DAF2_SchemaInfo_AttributeInfo Brancher -1 4"   INPUT FEATURE_TYPE DAF2_SchemaInfo_AttributeInfo   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME DAF2_SchemaInfo_<Rejected> INPUT FEATURE_TYPE DAF2_SchemaInfo_<Rejected>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, DAF2_SchemaInfo<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Log<space>and<space>Troubleshoot<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {Logger_ace85c8d_3fce_41df_a20f_352946b99a9c5} ]
+# If the Logger was in a custom transformer, the custom transformer's name was not being
+# properly logged -- instead we saw "$(<customXformerName_WORKSPACE_NAME)" being logged as the prefix of the
+# message. By deferencing and expanding out the XFORMER_NAME below, and then "WWJD" encoding it when it is
+# used in the @Log call via the $encode macro name suffix trick, we get the right result, and the right result
+# safely.
+MACRO LOGGABLE_XFORMER_NAME Logger
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Logger_Logger }    INPUT  FEATURE_TYPE DAF2_SchemaInfo_AttributeInfo    OUTPUT { FEATURE_TYPE Logger_LOGGED                  @Log(ENCODED, "$(LOGGABLE_XFORMER_NAME$encode):<space>@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Registre<closeparen><space>-<space><at>Value<openparen>Entity<space>Name<closeparen><space>-<space><at>Value<openparen>Attribute<closeparen><space><openparen><at>Value<openparen>Data<space>type<closeparen><closeparen>,Logger)","<Unused>","100","",INFO,NONE,$(FME_UUID_SAFE))                   }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Logger LOGGED Transformer Output Nuker"   INPUT FEATURE_TYPE Logger_LOGGED
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+

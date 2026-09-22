@@ -1,0 +1,32 @@
+# Local secrets and environment
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+.env
+.env.*
+secrets/
+config/local*
+
+# Editor and OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Build output
+dist/
+build/
+__pycache__/
+*.pyc
+
+# Helm / local state
+*.tgz
+
+# Azure local artifacts
+.azure/
