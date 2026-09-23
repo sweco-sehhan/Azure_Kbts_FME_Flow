@@ -78,3 +78,78 @@ kubectl create secret docker-registry acr-secret \
 - Use `kubectl rollout status deployment/fmeflow` to confirm the rollout.
 - Use `kubectl get pods -A` and `kubectl logs <pod>` when troubleshooting.
 - Keep the Azure-hosted web access and the on-prem reverse tunnel as separate concerns.
+
+## On-prem reverse tunnel
+
+The validated on-prem reverse tunnel for the current test environment is now run as a Windows Task Scheduler job on the on-prem server:
+
+```powershell
+ssh -N -i C:\Users\SEHHAN_BD\.ssh\id_ed25519 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -o ExitOnForwardFailure=yes tunnel@4.165.180.65 -R 0.0.0.0:9090:127.0.0.1:8080
+```
+
+This command keeps the tunnel open from the on-prem host to Azure and exposes the on-prem local service on port `8080` to the AKS-side service name `onprem-tunnel:9090`.
+
+For reference, the earlier manual PowerShell command was:
+
+```powershell
+ssh.exe -N -i id_ed25519 -R 0.0.0.0:9090:127.0.0.1:8080 tunnel@4.165.180.65
+```
+
+Operational notes:
+
+- FME Flow in AKS connects to `http://onprem-tunnel:9090`.
+- Because the tunnel is started by Task Scheduler, it is no longer tied to an interactive logon session.
+- If the user logs out of Windows, the scheduled task can continue running as long as the task is configured to run whether the user is logged on or not.
+- `StrictHostKeyChecking=accept-new` only accepts a previously unknown host key on first contact. It does not silently overwrite a changed host key; if the host key changes later, SSH still fails closed until `known_hosts` is updated.
+- `ServerAliveInterval=30` and `ServerAliveCountMax=3` help SSH notice a broken connection and exit instead of hanging indefinitely.
+- `ExitOnForwardFailure=yes` makes the process fail fast if the reverse forward cannot be established.
+
+If you need a future auto-recovery solution with a Windows service instead of Task Scheduler, the same tunnel can be wrapped as a service and configured to restart automatically:
+
+```powershell
+sc create SSHTunnel binPath= "ssh -N -i C:\ProgramData\ssh\id_ed25519 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -o ExitOnForwardFailure=yes tunnel@4.165.180.65 -R 0.0.0.0:9090:127.0.0.1:8080" start= auto
+sc stop SSHTunnel
+sc start SSHTunnel
+sc failure SSHTunnel reset= 86400 actions= restart/60000/restart/60000/restart/60000
+```
+
+Operational meaning of the service recovery settings:
+
+- `reset= 86400` clears the failure counter after 24 hours of healthy runtime.
+- `actions= restart/60000/restart/60000/restart/60000` tells Windows to restart the service after 60 seconds for the first, second, and subsequent failures.
+- This recovery only triggers when the service process exits; the SSH keepalive options above are what make the process notice broken connectivity and terminate cleanly.
+
+If the service uses a host key that can change on the SSH server side, the on-prem client may still need its stale `known_hosts` entry removed before reconnecting. The `accept-new` flag does not bypass host key mismatch failures.
+
+## Running baseline and Cloudflare in parallel
+
+Yes. The baseline 1.0.0 path and the optional Cloudflare Quick Tunnel path can coexist because they are separate entry points to the same FME Flow web service.
+
+- Baseline 1.0.0 path: Azure ingress and public IP through `ingress-nginx-controller`
+- Optional Cloudflare path: `cloudflared` deployment in AKS exposing a temporary `trycloudflare.com` URL
+- On-prem reverse tunnel: unchanged and independent of both web-access paths
+
+Operationally, you have two choices:
+
+- Run both in parallel and decide per user which URL to share.
+- Temporarily disable `cloudflared` and fall back to the baseline Azure ingress path only.
+
+The helper script [scripts/switch-access-mode.ps1](scripts/switch-access-mode.ps1) supports three modes:
+
+```powershell
+./scripts/switch-access-mode.ps1 -Mode status
+./scripts/switch-access-mode.ps1 -Mode baseline
+./scripts/switch-access-mode.ps1 -Mode cloudflare
+```
+
+To print only the current Quick Tunnel URL:
+
+```powershell
+./scripts/get-cloudflare-url.ps1
+```
+
+Behavior:
+
+- `status` shows the Azure ingress IP and the current `cloudflared` state.
+- `baseline` scales `cloudflared` to zero replicas and leaves the original 1.0.0 ingress path active.
+- `cloudflare` scales `cloudflared` to one replica and prints the latest `trycloudflare.com` log output.
