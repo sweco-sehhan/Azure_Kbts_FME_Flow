@@ -83,6 +83,7 @@ This is also why a hostname-based front door such as Cloudflare or an internal r
 - The service responded correctly outside the corporate network, which strongly suggests the problem was environmental and policy-based rather than a cluster outage.
 - Cloudflare or similar front-end access is optional and complementary to the reverse tunnel model.
 - The reverse tunnel for Remote Engine Services should remain separate from the user-facing web access pattern.
+- The baseline 1.0.0 ingress path and the optional `cloudflared` Quick Tunnel path can run in parallel and be switched operationally without changing the on-prem reverse tunnel.
 
 ## Prerequisites for deployment
 
@@ -116,6 +117,7 @@ kubectl apply -f k8s/
 
 - [README.md](README.md) — project overview and architectural context
 - [deployment-operations.md](deployment-operations.md) — Azure CLI, Docker, and kubectl command reference
+- [cloudflare-access.md](cloudflare-access.md) — exact Cloudflare Tunnel and Access choices for the current AKS-native web-access solution
 - [architecture-simple.md](architecture-simple.md) — simplified architecture diagram
 - [architecture-detailed.md](architecture-detailed.md) — detailed architecture notes
 - [scripts/create_aks.ps1](scripts/create_aks.ps1) — infrastructure bootstrap script
