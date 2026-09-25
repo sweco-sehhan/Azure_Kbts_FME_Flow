@@ -45,5 +45,7 @@ flowchart LR
 Kort notering:
 - Kontrollplan: FME Flow i AKS.
 - Exekvering: antingen engine-standard i AKS eller on-prem Remote Engine.
+- Licensstyrning: FME Flow avgör via web UI eller REST API om den andra engine-licensen ska vara aktiv i AKS eller delegeras till on-prem Remote Engine.
+- Förprovisionering: en AKS engine-replica kan finnas deployad i förväg och bli aktiv först när Flow tilldelar licensen.
 - Faktiska FME-portar från projektet: 443 (extern), 8080 (fmeflowweb), 7070 (engineregistration), 7078 (websocket).
 - Reverse SSH-tunneln möjliggör säker koppling till on-prem utan att Remote Engine blir en Kubernetes-pod.

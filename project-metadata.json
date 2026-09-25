@@ -2,7 +2,7 @@
   "project": "Azure_Kbts_FME_Flow",
   "version": "1.0.0",
   "product": "FME Flow",
-  "productVersion": "2026.2",
+  "productVersion": "2026.3",
   "architecture": {
     "platform": "Azure Kubernetes Service (AKS)",
     "webApplication": "FME Flow",

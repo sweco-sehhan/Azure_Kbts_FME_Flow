@@ -6,7 +6,7 @@
 - Initial baseline project for Azure-hosted FME Flow on AKS.
 - AKS provisioning script for resource group, ACR, and cluster creation.
 - Kubernetes manifests for FME Flow deployment, service, ingress, and PVC.
-- Project metadata defining FME Flow 2026.2 and on-prem FME Remote Engine Services via reverse tunnel.
+- Project metadata defining FME Flow 2026.3 and on-prem FME Remote Engine Services via reverse tunnel.
 
 ### Notes
 - This repository captures the initial working baseline for the architecture.
