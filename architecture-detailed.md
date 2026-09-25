@@ -141,6 +141,8 @@ En on-prem FME Flow Remote Engine etablerar en utgående reverse SSH-anslutning 
 ## Key design decisions
 
 - Tydlig separation mellan kontrollplan (FME Flow i AKS) och exekveringsplan (AKS engine eller on-prem Remote Engine).
+- Engine-licensen för den andra exekveringsplatsen styrs av FME Flow självt, antingen via web UI eller REST API.
+- En extra engine-replica i AKS kan vara förprovisionerad men inte praktiskt användbar förrän Flow tilldelar licensen till AKS-sidan.
 - Remote Engine körs uttryckligen utanför Kubernetes och är inte en AKS-pod.
 - Reverse SSH används för att möjliggöra säker utgående anslutning från on-prem utan att exponera on-prem tjänster direkt mot internet.
 - onprem-tunnel som intern ClusterIP-tjänst håller tunnelvägen intern i klustret; FME-relaterad tunnelväg är kopplad mot engineregistration (7070).

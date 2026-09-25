@@ -130,7 +130,7 @@ Current baseline:
 
 - Version: 1.0.0
 - Product: FME Flow
-- Product version: 2026.2
+- Product version: 2026.3
 
 ## Security guidance
 
